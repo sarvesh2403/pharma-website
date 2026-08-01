@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Products | Prakash Pharma</title>
+
+<meta name="description"
+content="Browse pharmaceutical products distributed by Prakash Pharma including tablets, capsules, syrups, injections, healthcare products and surgical supplies.">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="css/responsive.css">
+
+<link rel="stylesheet"
+href="css/animations.css">
+
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+
+<div id="preloader">
+<div class="loader"></div>
+</div>
+
+<!-- HEADER -->
+
+<header id="header">
+
+<div class="container">
+
+<nav class="navbar navbar-expand-lg">
+
+<a class="navbar-brand logo"
+href="index.html">
+
+<i class="fa-solid fa-prescription-bottle-medical"></i>
+
+Prakash Pharma
+
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbar">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="categories.html">Categories</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="manufacturers.html">Manufacturers</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="services.html">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-7">
+
+<h5 data-aos="fade-right">
+
+Our Pharmaceutical Products
+
+</h5>
+
+<h1 data-aos="fade-right">
+
+Quality Medicines From
+Trusted Manufacturers
+
+</h1>
+
+<p data-aos="fade-right">
+
+Prakash Pharma supplies a comprehensive
+range of pharmaceutical products sourced
+from India's leading manufacturers,
+ensuring quality, authenticity and
+timely availability.
+
+</p>
+
+<a href="#products"
+
+class="btn btn-light">
+
+Browse Medicines
+
+</a>
+
+</div>
+
+<div class="col-lg-5">
+
+<img src="images/products-banner.jpg"
+
+class="img-fluid hero-image"
+
+alt="Medicines">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SEARCH & FILTER -->
+
+<section id="products"
+
+class="section-padding">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Our Product Collection
+
+</h2>
+
+<p>
+
+Search medicines or filter by category.
+
+</p>
+
+</div>
+
+<div class="row mb-5">
+
+<div class="col-lg-8">
+
+<input
+type="text"
+
+id="productSearch"
+
+class="form-control"
+
+placeholder="Search medicines...">
+
+</div>
+
+<div class="col-lg-4">
+
+<select
+
+id="categoryFilter"
+
+class="form-select">
+
+<option>All</option>
+
+<option>Tablets</option>
+
+<option>Capsules</option>
+
+<option>Syrups</option>
+
+<option>Injectables</option>
+
+<option>Antibiotics</option>
+
+<option>Pain Relief</option>
+
+<option>Supplements</option>
+
+<option>Healthcare</option>
+
+<option>Allergy</option>
+
+<option>Gastro</option>
+
+</select>
+
+</div>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<div class="row"
+
+id="productContainer">
+
+<!-- products.js loads products here -->
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURED PRODUCTS -->
+
+<section class="section-padding bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Featured Products
+
+</h2>
+
+<p>
+
+Popular pharmaceutical products
+distributed by Prakash Pharma.
+
+</p>
+
+</div>
+
+<div class="row"
+
+id="featuredProducts">
+
+<!-- JavaScript -->
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PRODUCT CATEGORIES
+=========================== -->
+
+<section class="section-padding">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Medicine Categories
+
+</h2>
+
+<p>
+
+Explore medicines organized into different pharmaceutical categories.
+
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="category-card">
+
+<i class="fa-solid fa-tablets"></i>
+
+<h4>Tablets</h4>
+
+<p>
+
+General medicines for daily healthcare.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="category-card">
+
+<i class="fa-solid fa-capsules"></i>
+
+<h4>Capsules</h4>
+
+<p>
+
+Quality capsule formulations from trusted brands.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="category-card">
+
+<i class="fa-solid fa-prescription-bottle"></i>
+
+<h4>Syrups</h4>
+
+<p>
+
+Pediatric and adult syrup formulations.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-4">
+
+<div class="category-card">
+
+<i class="fa-solid fa-syringe"></i>
+
+<h4>Injectables</h4>
+
+<p>
+
+Hospital-grade injectable medicines.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+WHY BUY FROM US
+=========================== -->
+
+<section class="section-padding bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Why Choose Our Products?
+
+</h2>
+
+<p>
+
+Quality medicines sourced directly from leading pharmaceutical companies.
+
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 mb-4">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h3>
+
+100% Genuine
+
+</h3>
+
+<p>
+
+Every product is sourced from authorized pharmaceutical manufacturers.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-boxes-stacked"></i>
+
+<h3>
+
+Large Inventory
+
+</h3>
+
+<p>
+
+Thousands of pharmaceutical products available for quick supply.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>
+
+Quick Distribution
+
+</h3>
+
+<p>
+
+Reliable delivery network serving pharmacies and hospitals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+MANUFACTURERS
+=========================== -->
+
+<section class="section-padding">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Leading Pharmaceutical Brands
+
+</h2>
+
+<p>
+
+We distribute products from India's trusted pharmaceutical manufacturers.
+
+</p>
+
+</div>
+
+<div class="row text-center">
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Sun Pharma</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Cipla</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Dr. Reddy's</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Abbott</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Torrent</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 mb-4">
+
+<div class="feature-card">
+
+<h5>Himalaya</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PRODUCT STATISTICS
+=========================== -->
+
+<section class="counter-area">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h2 class="counter">5000</h2>
+
+<p>
+
+Medicines
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="counter">250</h2>
+
+<p>
+
+Manufacturers
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="counter">1000</h2>
+
+<p>
+
+Happy Customers
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="counter">20</h2>
+
+<p>
+
+Years Experience
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+CALL TO ACTION
+=========================== -->
+
+<section class="hero">
+
+<div class="container text-center">
+
+<h2>
+
+Need Medicines in Bulk?
+
+</h2>
+
+<p class="mt-4 mb-4">
+
+Partner with Prakash Pharma for dependable pharmaceutical distribution,
+competitive pricing, and timely delivery to your pharmacy,
+clinic, or healthcare institution.
+
+</p>
+
+<a href="contact.html"
+
+class="btn btn-light btn-lg me-3">
+
+Request a Quote
+
+</a>
+
+<a href="about.html"
+
+class="btn btn-outline-light btn-lg">
+
+Learn More
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4 mb-4">
+
+<h3>
+
+Prakash Pharma
+
+</h3>
+
+<p>
+
+Trusted pharmaceutical distributor committed
+to delivering genuine medicines, healthcare
+products and exceptional customer service.
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Gadad Building,
+Near New Bus Stand,
+Ranebennur,
+Karnataka
+
+</p>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="categories.html">Categories</a></li>
+
+<li><a href="manufacturers.html">Manufacturers</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-4">
+
+<h3>
+
+Contact Information
+
+</h3>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 98765 43210
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@prakashpharma.in
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-clock"></i>
+
+Mon - Sat : 9:00 AM - 8:00 PM
+
+</p>
+
+<div class="socials mt-4">
+
+<i class="fab fa-facebook-f"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-linkedin-in"></i>
+
+<i class="fab fa-whatsapp"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<p class="mb-0">
+
+© 2026 Prakash Pharma.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+<div class="col-md-6 text-md-end">
+
+<a href="privacy.html">
+
+Privacy Policy
+
+</a>
+
+|
+
+<a href="terms.html">
+
+Terms & Conditions
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- ==========================
+JAVASCRIPT FILES
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/slider.js"></script>
+
+<script>
+
+AOS.init({
+duration:900,
+once:true
+});
+
+</script>
+
+</body>
+
+</html>

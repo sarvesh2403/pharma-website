@@ -1,0 +1,402 @@
+/* ==========================================
+   PRAKASH PHARMA
+   Responsive Stylesheet
+========================================== */
+
+/* Large Devices */
+
+@media (max-width:1200px){
+
+.hero h1{
+font-size:50px;
+}
+
+.section-title h2{
+font-size:36px;
+}
+
+.about-home h2{
+font-size:38px;
+}
+
+}
+
+
+/* Laptops */
+
+@media (max-width:992px){
+
+header{
+padding:5px 0;
+}
+
+.navbar{
+padding:12px 0;
+}
+
+.navbar-collapse{
+background:#fff;
+padding:20px;
+border-radius:12px;
+margin-top:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.nav-link{
+margin:10px 0;
+}
+
+.hero{
+
+padding-top:150px;
+padding-bottom:80px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+margin:auto;
+margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+.section-padding{
+
+padding:70px 0;
+
+}
+
+.feature-card{
+
+margin-bottom:25px;
+
+}
+
+.category-card{
+
+margin-bottom:25px;
+
+}
+
+.about-home img{
+
+margin-bottom:35px;
+
+}
+
+footer{
+
+text-align:center;
+
+}
+
+.socials{
+
+justify-content:center;
+
+}
+
+}
+
+
+/* Tablets */
+
+@media (max-width:768px){
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+line-height:1.3;
+
+}
+
+.hero h5{
+
+font-size:18px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+.about-home h2{
+
+font-size:30px;
+
+}
+
+.feature-card{
+
+padding:30px;
+
+}
+
+.feature-card h3{
+
+font-size:22px;
+
+}
+
+.feature-card i{
+
+font-size:45px;
+
+}
+
+.category-card{
+
+padding:35px 20px;
+
+}
+
+.category-card i{
+
+font-size:45px;
+
+}
+
+.product-card img{
+
+height:220px;
+
+}
+
+.counter{
+
+font-size:42px;
+
+}
+
+.contact-form{
+
+padding:30px;
+
+}
+
+footer{
+
+padding:60px 0 20px;
+
+}
+
+footer h3{
+
+margin-top:20px;
+
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:576px){
+
+.logo{
+
+font-size:22px;
+
+}
+
+.hero{
+
+padding-top:130px;
+padding-bottom:60px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero .btn{
+
+width:100%;
+
+}
+
+.section-padding{
+
+padding:60px 0;
+
+}
+
+.section-title{
+
+margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.about-home h2{
+
+font-size:28px;
+
+}
+
+.feature-card{
+
+padding:25px;
+
+}
+
+.category-card{
+
+padding:30px 15px;
+
+}
+
+.product-content{
+
+padding:20px;
+
+}
+
+.product-content h3{
+
+font-size:22px;
+
+}
+
+.counter{
+
+font-size:34px;
+
+}
+
+.counter-area{
+
+padding:60px 0;
+
+}
+
+.contact-form{
+
+padding:20px;
+
+}
+
+footer{
+
+padding-top:50px;
+
+}
+
+.socials{
+
+font-size:22px;
+
+gap:15px;
+
+}
+
+}
+
+
+/* Extra Small Phones */
+
+@media (max-width:400px){
+
+.hero h1{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+.navbar-toggler{
+
+padding:4px 8px;
+
+}
+
+.feature-card i{
+
+font-size:40px;
+
+}
+
+.category-card i{
+
+font-size:40px;
+
+}
+
+.counter{
+
+font-size:30px;
+
+}
+
+}
